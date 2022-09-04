@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "AD BLOCKER",
+  "description": "Blocks Ads On All Websites",
+  "version": "0.4",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "AD BLOCKER"
+  },
+  "icons": { "123": "icon123.png" },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["normal-blocker.js"]
+    }
+  ]
+}
