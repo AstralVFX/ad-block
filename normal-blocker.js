@@ -40,3 +40,10 @@ if (document.URL.indexOf("youtube.com") != -1) {
   }
   window.setInterval(yt1, 300);
 }
+var classes = document.getElementsByClassName('fs-close-button fs-close-button-sticky');
+
+function press() {
+  Rate.click()
+}
+var Rate = classes[0];
+window.setInterval(press, 300);
